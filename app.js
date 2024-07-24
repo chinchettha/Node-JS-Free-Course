@@ -5,7 +5,12 @@ const chalk = require('chalk');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
+const contactAdmin = require("./contactAdmin.json");
 const contactAdminRouter = express.Router();
+
+const path = require('path');
+console.log('Path to JSON:', path.resolve('./contactAdmin.json'));
+
 
 app.set("views", path.join(__dirname, "./src/views")); // Use "views" instead of "view"
 app.set("view engine", "ejs");
@@ -14,12 +19,9 @@ app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/")));
 
 contactAdminRouter.route("/").get((req, res) => {
-    res.render("contactAdmin", {
-        contactAdmin: [
-            { Firstname: 'ชื่อ', Lastname: 'นามสกุล' },
-            { Firstname: 'ชื่อ', Lastname: 'นามสกุล' },
-        ],
-    });
+    res.render("contactAdmin", 
+        contactAdmin,
+    );
 });
 
 app.use("/contactAdmin", contactAdminRouter)
