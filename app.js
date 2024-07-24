@@ -12,6 +12,8 @@ app.set("view engine", "ejs");
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/")));
 
+app.get("/admin")
+
 app.get("/", (req, res) => {
     res.render('index', { username : 'Chinchettha' , customer : ["น้องเอก", "คนนี้", "ดีที่หนึ่ง"] });
 });
