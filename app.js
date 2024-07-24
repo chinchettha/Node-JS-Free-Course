@@ -15,9 +15,9 @@ app.use(express.static(path.join(__dirname, "/public/")));
 
 contactAdminRouter.route("/").get((req, res) => {
     res.render("contactAdmin", {
-        Administrator: [
-            {Fristname: 'ชื่อ', Lastname: 'นามสกุล'},
-            {Fristname: 'ชื่อ', Lastname: 'นามสกุล'},
+        contactAdmin: [
+            { Firstname: 'ชื่อ', Lastname: 'นามสกุล' },
+            { Firstname: 'ชื่อ', Lastname: 'นามสกุล' },
         ],
     });
 });

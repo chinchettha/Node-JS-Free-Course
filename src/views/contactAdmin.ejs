@@ -53,8 +53,12 @@
             </form>
           </div>
         </div> -->
-          <h1>Contact Admin</h1>
-        
+        <h1>Contact Admin</h1>
+
+        <% contactAdmin.forEach((admin) => { %>
+          <h4><%= admin.Firstname %></h4>
+          <h4><%= admin.Lastname %></h4>
+        <% }) %>
       </div>
     </div>
 
