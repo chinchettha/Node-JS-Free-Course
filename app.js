@@ -5,7 +5,7 @@ const chalk = require('chalk');
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
-const adminRouter = express.Router();
+const contactAdminRouter = express.Router();
 
 app.set("views", path.join(__dirname, "./src/views")); // Use "views" instead of "view"
 app.set("view engine", "ejs");
@@ -13,11 +13,11 @@ app.set("view engine", "ejs");
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/")));
 
-adminRouter.route("/").get((req, res) => {
+contactAdminRouter.route("/").get((req, res) => {
     res.send("Hello World !! I'm Admin.");
 });
 
-app.use("/admin", adminRouter)
+app.use("/contactAdmin", contactAdminRouter)
 
 app.get("/", (req, res) => {
     res.render('index', { username : 'Chinchettha' , customer : ["น้องเอก", "คนนี้", "ดีที่หนึ่ง"] });
