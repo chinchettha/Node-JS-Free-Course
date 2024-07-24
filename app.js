@@ -14,7 +14,12 @@ app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/")));
 
 contactAdminRouter.route("/").get((req, res) => {
-    res.render("contactAdmin");
+    res.render("contactAdmin", {
+        Administrator: [
+            {Fristname: 'ชื่อ', Lastname: 'นามสกุล'},
+            {Fristname: 'ชื่อ', Lastname: 'นามสกุล'},
+        ],
+    });
 });
 
 app.use("/contactAdmin", contactAdminRouter)
