@@ -14,7 +14,7 @@ app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/")));
 
 contactAdminRouter.route("/").get((req, res) => {
-    res.send("Hello World !! I'm Admin.");
+    res.render("contactAdmin");
 });
 
 app.use("/contactAdmin", contactAdminRouter)
