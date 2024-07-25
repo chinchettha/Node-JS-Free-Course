@@ -26,12 +26,12 @@
     <div class="contents order-2 order-md-1">
 
       <div class="container">
-        <h1 class="admin-page">Contact Admin</h1>
+        <p class="admin-page">Contact Admin</p>
         <div class="detail">
         <% contactAdmin.forEach((admin) => { %>
           <h4><%= admin.Fullname %></h4>
-          <h4></h4>><%= admin.Email %></h4>
-          <h4></h4>><%= admin.Telephone %></h4>
+          <h4><%= admin.Email %></h4>
+          <h4><%= admin.Telephone %></h4>
         <% }) %>
       </div>
       </div>
