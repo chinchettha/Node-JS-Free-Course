@@ -1,18 +1,14 @@
 {
     "contactAdmin": [
       {
-        "Firstname": "Chinchettha",
-        "Lastname": "Namayom",
-        "Operation" : "OP1",
-        "Email" : "chinchetthan@lpn.hanabk.th.com",
+        "Fullname": "Mr.Chinchettha Namayom : OP1",
+        "Email" : "Email : chinchetthan@lpn.hanabk.th.com",
         "Telephone" :   "Tel.2534"
       },
       {
-        "Firstname": "Prasert",
-        "Lastname": "Sukseekeaw",
-        "Operation" : "MIS",
-        "Email" : "praserts@lpn.hanabk.th.com",
-        "Telephone" :   "Tel.XXX"
+        "Fullname": "Mr.Prasert Sukseekeaw : MIS",
+        "Email" : "Email : praserts@lpn.hanabk.th.com",
+        "Telephone" :   "Tel.XXX"  
       }
     ]
   }

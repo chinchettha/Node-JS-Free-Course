@@ -142,3 +142,25 @@ h2 {
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;
   opacity: .2; }
+
+  .admin-page {
+    text-align: center;
+    color: blue;
+    margin: 400px;
+    font-weight: bold;
+  }
+
+  .detail {
+    text-align: left;
+    margin-left: 390px;
+    margin-top: -370px;
+    display: block;
+    border: 1px solid;
+    padding: 20px; 
+    width: 390px;
+    border-radius: 10px;
+    background-color: rgba(251, 134, 51, 0.8);
+    color: #fff;
+    font-size: 16px;
+    backdrop-filter: blur(20px);
+  }
